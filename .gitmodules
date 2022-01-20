@@ -4,3 +4,15 @@
 	branch = master
 
 
+[submodule "freedylang"]
+	path = freedylang
+	url = https://github.com/BruceFreedy/freedylang
+	branch = master
+
+
+[submodule "mcfreedylang"]
+	path = mcfreedylang
+	url = https://github.com/BruceFreedy/mcfreedylang
+	branch = master
+
+
