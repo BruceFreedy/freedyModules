@@ -1,0 +1,13 @@
+project(":freedylang") {
+    apply plugin: "java-library"
+    dependencies {
+        api project(":common")
+    }
+}
+
+project(":mcfreedylang") {
+    apply plugin: "java-library"
+    dependencies {
+        api project(":freedylang")
+    }
+}
