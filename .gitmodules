@@ -13,7 +13,7 @@
 [submodule "mcfreedylang"]
 	path = mcfreedylang
 	url = https://github.com/BruceFreedy/mcfreedylang
-	branch = master
+	branch = remote-run
 
 
 [submodule "freedysource"]
