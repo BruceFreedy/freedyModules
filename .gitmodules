@@ -19,7 +19,7 @@
 [submodule "freedysource"]
 	path = freedysource
 	url = https://github.com/BruceFreedy/freedysource
-	branch = temp
+	branch = master
 
 
 
