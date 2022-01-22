@@ -9,3 +9,26 @@ project(":mcfreedylang") {
     apply plugin: "java-library"
     dependencies.api project(":freedylang")
 }
+
+task freedylang { dist("common", "freedylang") }
+task mcfreedylang { dist("freedylang", "mcfreedylang") }
+
+task dist {
+    dependsOn(project(":common").getTasksByName("clean", true))
+    dependsOn(project(":freedylang").getTasksByName("clean", true))
+    dependsOn(project(":mcfreedylang").getTasksByName("clean", true))
+    dependsOn(project(":common").getTasksByName("shadowJar", true))
+    dependsOn(freedylang)
+    dependsOn(project(":freedylang").getTasksByName("shadowJar", true))
+    dependsOn(mcfreedylang)
+}
+
+
+void dist(String source, String target) {
+    var file = file(target + "/libs")
+    project.delete(file)
+    copy {
+        from "$source/build/libs/" + source + ".jar"
+        into "$target/libs"
+    }
+}
