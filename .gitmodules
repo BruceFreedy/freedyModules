@@ -16,10 +16,3 @@
 	branch = master
 
 
-[submodule "freedysource"]
-	path = freedysource
-	url = https://github.com/BruceFreedy/freedysource
-	branch = master
-
-
-
