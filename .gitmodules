@@ -15,3 +15,11 @@
 	url = https://github.com/BruceFreedy/mcfreedylang
 	branch = master
 
+
+[submodule "freedysource"]
+	path = freedysource
+	url = https://github.com/BruceFreedy/freedysource
+	branch = refs/heads/master
+
+
+
