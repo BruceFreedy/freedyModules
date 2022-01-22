@@ -1,15 +1,11 @@
 project(":freedylang") {
+    ext.libs = null
     apply plugin: "java-library"
-    ext.module = () ->{}
-    dependencies {
-        api project(":common")
-    }
+    dependencies.api project(":common")
 }
 
 project(":mcfreedylang") {
+    ext.libs = null
     apply plugin: "java-library"
-    ext.module = () ->{}
-    dependencies {
-        api project(":freedylang")
-    }
+    dependencies.api project(":freedylang")
 }
