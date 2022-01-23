@@ -19,3 +19,8 @@
 [submodule "freedysource"]
 	path = freedysource
 	url = https://github.com/BruceFreedy/freedysource
+
+
+[submodule "mcfreedylangaddon"]
+	path = mcfreedylangaddon
+	url = https://github.com/BruceFreedy/mcfreedylangaddon
