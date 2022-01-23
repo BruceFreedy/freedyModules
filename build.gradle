@@ -10,6 +10,12 @@ project(":mcfreedylang") {
     dependencies.api project(":freedylang")
 }
 
+project(":mcfreedylangaddon") {
+    ext.libs = null
+    apply plugin: "java-library"
+    dependencies.compileOnly project(":mcfreedylang")
+}
+
 task freedylang { dist("common", "freedylang") }
 task mcfreedylang { dist("freedylang", "mcfreedylang") }
 

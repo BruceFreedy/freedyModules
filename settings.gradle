@@ -1,1 +1,1 @@
-include 'common', 'freedylang', 'mcfreedylang'
+include 'common', 'freedylang', 'mcfreedylang', 'mcfreedylangaddon'
